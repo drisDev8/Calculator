@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+       <div id="toggle" class="active">
+           <i class="indicator"></i>
+       </div>
+        <h1>Calculator</h1>
+
+         <div class="calci">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tbody>
+                <tr>
+                    <td><button type="button" value="AC" class="clr" onclick="screen.value=''">AC</button></td>
+                    <td><button type="button" value="DEL" class="Del" onclick="Del()">DEL</button></td>
+                    <td><button type="button" value="(" class="brac" onclick="number(value)">(</button></td>
+                    <td><button type="button" value=")" class="brac" onclick="number(value)">)</button></td>
+                    <td><button type="button" value="x^2" onclick="square()">x<sup>2</button></td>
+                    <td><button type="button" value="/" class="oper" onclick="number(value)">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" value="sin"  class="oper2" onclick="sin()">sin</button></td>
+                        <td><button type="button" value="cos"  class="oper2" onclick="cos()">cos</button></td>
+                        <td><button type="button" value="7" class="num" onclick="number(value)">7</button></td>
+                        <td><button type="button" value="8" class="num" onclick="number(value)">8</button></td>
+                        <td><button type="button" value="9" class="num" onclick="number(value)">9</button></td>
+                        <td><button type="button" value="*" class="oper" onclick="number(value)">x</button></td>
+                    </tr>
+                        <td><button type="button" value="ln"  class="oper2" onclick="lan()">ln</button></td>
+                        <td><button type="button" value="log" class="oper2" onclick="log()">log</button></td>
+                        <td><button type="button" value="4" class="num" onclick="number(value)">4</button></td>
+                        <td><button type="button" value="5" class="num" onclick="number(value)">5</button></td>
+                        <td><button type="button" value="6" class="num" onclick="number(value)">6</button></td>
+                        <td><button type="button" value="-" class="oper" onclick="number(value)">-</button></td>
+                    <tr>
+                        <td><button type="button" value="x^2"  class="oper2" onclick="square()"> x<sup>2 </button></td>
+                        <td><button type="button" value="%" class="oper" onclick="per()"> % </button></td>
+                        <td><button type="button" value="1" class="num" onclick="number(value)">1</button></td>
+                        <td><button type="button" value="2" class="num" onclick="number(value)">2</button></td>
+                        <td><button type="button" value="3" class="num" onclick="number(value)">3</button></td>
+                        <td><button type="button" value="+" class="oper" onclick="number(value)">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" value="&#8508;"  class="oper2" onclick="pi()">&#8508;</button></td>
+                        <td><button type="button" value="sqrt2"  class="oper2" onclick="sqrt2()"> &radic; </button></td>
+                        <td><button type="button"  class="num" value="." onclick="number(value)">.</button></td>
+                        <td><button type="button" class="num" value="0" onclick="number(value)">0</button></td>
+                        <td><button type="button" value="=" onclick="equal()" class="equal">=</button></td>
+                    </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="calci.js"></script>
+</body>
+</html>
